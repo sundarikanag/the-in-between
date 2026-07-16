@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="The In Between is a personal archive of cafés, study sessions, and ordinary moments worth remembering."
+    >
+
+    <title>The In Between | Personal Café Journal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Caveat:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <nav class="navbar">
+            <a href="#" class="logo">
+                The In Between
+            </a>
+
+            <div class="nav-links">
+                <a href="#journal">entries</a>
+                <a href="#journal">places I’d return to</a>
+
+                <a href="#new-entry" class="nav-button">
+                    add a memory
+                </a>
+            </div>
+        </nav>
+
+        <section class="hero">
+
+            <div class="hero-content">
+                <p class="hero-label">
+                    a personal archive of ordinary days
+                </p>
+
+                <h1>
+                    The places I went while becoming <em>someone new</em>.
+                </h1>
+
+                <p class="hero-description">
+                    A personal archive of cafés, study sessions,
+                    and the ordinary moments I do not want to forget.
+                </p>
+
+                <p class="hero-personal-note">
+                    I made this to remember where I studied, coded,
+                    rested, overthought everything, and slowly became
+                    the person I wanted to be.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#new-entry" class="primary-button">
+                        add a memory
+                    </a>
+
+                    <a href="#journal" class="text-link">
+                        read my entries
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <p class="image-note">
+                    places can hold versions of us <3
+                </p>
+
+                <div class="hero-image">
+                    <img
+                        src="images/cafe2-hero.jpg"
+                        alt="A quiet and bright café interior"
+                    >
+                </div>
+
+                <div class="location-card">
+                    <p id="latestEntryNumber">
+                        entry no. 01
+                    </p>
+
+                    <h2 id="latestEntryTitle">
+                        forgot why i opened my laptop.
+                    </h2>
+
+                    <span id="latestEntryLocation">
+                        stayed anyway.
+                    </span>
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <section class="journal-section" id="journal">
+
+            <div class="journal-heading">
+                <div>
+                    <p class="section-label">
+                        fragments from ordinary days
+                    </p>
+
+                    <h2>
+                        Things I wanted future me to remember.
+                    </h2>
+                </div>
+
+                <p class="journal-introduction">
+                    Not every day changes your life. Some days simply
+                    give you good light, a quiet table, and enough time
+                    to begin again.
+                </p>
+            </div>
+
+            <div class="memory-stats">
+                <div class="stat">
+                    <span id="entryCount">0</span>
+                    <p>memories kept</p>
+                </div>
+
+                <div class="stat">
+                    <span id="favoriteCount">0</span>
+                    <p>places I’d return to</p>
+                </div>
+
+                <div class="stat">
+                    <span id="focusedCount">0</span>
+                    <p>focused days</p>
+                </div>
+            </div>
+
+            <div class="journal-grid" id="journalGrid">
+                <div class="empty-journal" id="emptyJournal">
+                    <p class="empty-number">00</p>
+
+                    <h3>
+                        Nothing has been written here yet.
+                    </h3>
+
+                    <p>
+                        Add the first place, drink, thought, or tiny
+                        detail you want to remember.
+                    </p>
+
+                    <a href="#new-entry">
+                        begin the journal →
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="entry-section" id="new-entry">
+
+            <div class="entry-layout">
+
+                <div class="entry-heading">
+                    <p class="section-label">
+                        leave something for future me
+                    </p>
+
+                    <h2>
+                        Add a memory from today.
+                    </h2>
+
+                    <p>
+                        It does not have to be important. Most memories
+                        are not, until enough time passes.
+                    </p>
+
+                    <div class="margin-note">
+                        <span>today’s reminder</span>
+
+                        <p>
+                            Small days are still part of the story.
+                        </p>
+                    </div>
+                </div>
+
+                <form class="entry-form" id="entryForm">
+
+                    <fieldset>
+                        <legend>
+                            01 — where did I end up today?
+                        </legend>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label for="cafeName">
+                                    what was this place called?
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="cafeName"
+                                    placeholder="Deet’s, Coffeeholics, somewhere near campus..."
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="location">
+                                    where in the world was I?
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="location"
+                                    placeholder="Blacksburg, Virginia"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="visitDate">
+                                    when did this happen?
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="visitDate"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="seat">
+                                    where did I decide to sit?
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="seat"
+                                    placeholder="the window seat near the plants"
+                                >
+                            </div>
+
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            02 — what filled the time?
+                        </legend>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label for="drink">
+                                    what did I order?
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="drink"
+                                    placeholder="strawberry matcha with oat milk"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="workedOn">
+                                    what brought me here?
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="workedOn"
+                                    placeholder="trying to finish this assignment..."
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="soundtrack">
+                                    what filled the room?
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="soundtrack"
+                                    placeholder="rain, café noise, a playlist, silence..."
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mood">
+                                    how did today feel?
+                                </label>
+
+                                <select id="mood" required>
+                                    <option value="">
+                                        choose a feeling
+                                    </option>
+
+                                    <option value="inspired">
+                                        inspired
+                                    </option>
+
+                                    <option value="focused">
+                                        focused
+                                    </option>
+
+                                    <option value="hopeful">
+                                        hopeful
+                                    </option>
+
+                                    <option value="relaxed">
+                                        relaxed
+                                    </option>
+
+                                    <option value="tired">
+                                        tired
+                                    </option>
+
+                                    <option value="overwhelmed">
+                                        overwhelmed
+                                    </option>
+
+                                    <option value="somewhere in between">
+                                        somewhere in between
+                                    </option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            03 — what should stay?
+                        </legend>
+
+                        <div class="form-group">
+                            <label for="discovery">
+                                a tiny thing worth remembering
+                            </label>
+
+                            <input
+                                type="text"
+                                id="discovery"
+                                placeholder="the plants were real."
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reflection">
+                                if I forget this day...
+                            </label>
+
+                            <textarea
+                                id="reflection"
+                                rows="7"
+                                maxlength="500"
+                                placeholder="I came here convinced today was going to be terrible. It wasn't. I left with less work than I expected and somehow felt lighter."
+                                required
+                            ></textarea>
+
+                            <div class="character-row">
+                                <small>
+                                    write it like no one else will read it
+                                </small>
+
+                                <small id="characterCount">
+                                    0 / 500
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="choice-row">
+
+                            <label class="favorite-choice">
+                                <input
+                                    type="checkbox"
+                                    id="favorite"
+                                >
+
+                                <span>
+                                    this is a place I would return to
+                                </span>
+                            </label>
+
+                            <div class="form-group return-group">
+                                <label for="returnAnswer">
+                                    would future me come back?
+                                </label>
+
+                                <select id="returnAnswer">
+                                    <option value="absolutely">
+                                        absolutely
+                                    </option>
+
+                                    <option value="maybe">
+                                        maybe
+                                    </option>
+
+                                    <option value="probably not">
+                                        probably not
+                                    </option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </fieldset>
+
+                    <p class="form-message" id="formMessage"></p>
+
+                    <button type="submit" class="submit-button">
+                        keep this memory
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            The In Between
+        </p>
+
+        <span>
+            made for the places, people, and versions of myself
+            I do not want to forget.
+        </span>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
