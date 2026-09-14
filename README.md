@@ -18,6 +18,7 @@ Instead of tracking productivity, it helps me remember where I was, how the day 
 - Track favorite places and focused days
 - Responsive scrapbook-inspired design
 
+
 ## Built With
 
 - HTML
