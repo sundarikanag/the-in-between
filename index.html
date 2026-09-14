@@ -8,6 +8,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
+    <!-- meta description shows up in google search results / link previews -->
     <meta
         name="description"
         content="The In Between is a personal archive of cafés, study sessions, and ordinary moments worth remembering."
@@ -15,6 +16,7 @@
 
     <title>The In Between | Personal Café Journal</title>
 
+    <!-- fraunces for headings (warm serif), caveat for the handwritten-feeling bits, inter for body text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,11 +24,13 @@
         rel="stylesheet"
     >
 
+    <!-- all my actual styling lives in here, compiled from sass -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <!-- everything up top (nav + the big intro section) -->
     <header class="site-header">
 
         <nav class="navbar">
@@ -44,6 +48,7 @@
             </div>
         </nav>
 
+        <!-- the big intro/landing section with the photo -->
         <section class="hero">
 
             <div class="hero-content">
@@ -89,6 +94,7 @@
                     >
                 </div>
 
+                <!-- js fills these in with whatever the most recent entry is -->
                 <div class="location-card">
                     <p id="latestEntryNumber">
                         entry no. 01
@@ -110,6 +116,7 @@
 
     <main>
 
+        <!-- where all the saved entries actually show up as cards -->
         <section class="journal-section" id="journal">
 
             <div class="journal-heading">
@@ -130,6 +137,7 @@
                 </p>
             </div>
 
+            <!-- these numbers get updated by js every time an entry is added/deleted -->
             <div class="memory-stats">
                 <div class="stat">
                     <span id="entryCount">0</span>
@@ -147,6 +155,8 @@
                 </div>
             </div>
 
+            <!-- js injects entry cards in here. leaving the empty state in the
+                 html itself so it shows correctly before js even runs -->
             <div class="journal-grid" id="journalGrid">
                 <div class="empty-journal" id="emptyJournal">
                     <p class="empty-number">00</p>
@@ -168,6 +178,7 @@
 
         </section>
 
+        <!-- the actual "add a memory" form -->
         <section class="entry-section" id="new-entry">
 
             <div class="entry-layout">
@@ -197,6 +208,8 @@
 
                 <form class="entry-form" id="entryForm">
 
+                    <!-- splitting the form into 3 fieldsets so it doesn't feel
+                         like one giant wall of inputs -->
                     <fieldset>
                         <legend>
                             01 — where did I end up today?
@@ -300,6 +313,8 @@
                                 >
                             </div>
 
+                            <!-- required bc i wanted every entry to at least
+                                 have some kind of mood tagged to it -->
                             <div class="form-group">
                                 <label for="mood">
                                     how did today feel?
@@ -365,6 +380,8 @@
                                 if I forget this day...
                             </label>
 
+                            <!-- capped at 500 chars just so the journal cards
+                                 don't end up with a huge wall of text on them -->
                             <textarea
                                 id="reflection"
                                 rows="7"
@@ -378,6 +395,7 @@
                                     write it like no one else will read it
                                 </small>
 
+                                <!-- js updates this live as you type -->
                                 <small id="characterCount">
                                     0 / 500
                                 </small>
@@ -420,6 +438,7 @@
                         </div>
                     </fieldset>
 
+                    <!-- js drops a success/error message in here after submit -->
                     <p class="form-message" id="formMessage"></p>
 
                     <button type="submit" class="submit-button">
@@ -445,6 +464,8 @@
         </span>
     </footer>
 
+    <!-- handles the form submit, saving to localStorage, rendering the
+         journal cards, and updating the stats up top -->
     <script src="js/script.js"></script>
 </body>
 </html>
