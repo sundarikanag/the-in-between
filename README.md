@@ -20,7 +20,7 @@ It's a digital journal for saving cafés, study sessions, and random moments I d
 - Responsive scrapbook-inspired design
 
 ## Demo 
-https://canva.link/3yk1bxt7blf4iy4
+[https://canva.link/3yk1bxt7blf4iy4](https://canva.link/3yk1bxt7blf4iy4)
 
 
 ## Built With
