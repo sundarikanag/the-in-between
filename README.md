@@ -18,6 +18,9 @@ Instead of tracking productivity, it helps me remember where I was, how the day 
 - Track favorite places and focused days
 - Responsive scrapbook-inspired design
 
+## Demo 
+https://canva.link/3yk1bxt7blf4iy4
+
 
 ## Built With
 
