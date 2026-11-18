@@ -7,9 +7,9 @@
 
 ────⋆·˚⋆·˚────
 
-I'm an avid café lover and I've worked as a barista for 3+ years, so I'm in cafés constantly — for work, for studying, just to sit somewhere with good light. I made The In Between for myself, because I kept forgetting the small stuff: which place had the good oat milk, what I ordered that one time I actually got work done, the little details that make a day stick with you.
+I'm an avid café lover and I've worked as a barista for 3+ years, so I'm in cafés constantly like for work, for studying, just to sit somewhere with good light. I made The In Between for myself, because I kept forgetting the small stuff: which place had the good oat milk, what I ordered that one time I actually got work done, the little details that make a day stick with you.
 
-It's a digital journal for saving cafés, study sessions, and random moments I don't want to forget. No productivity tracking, no streaks — just a place to log where I was, how the day felt, and whatever small detail stuck with me.
+It's a digital journal for saving cafés, study sessions, and random moments I don't want to forget. No productivity tracking, no streaks - just a place to log where I was, how the day felt, and whatever small detail stuck with me.
 
 ## Features
 
